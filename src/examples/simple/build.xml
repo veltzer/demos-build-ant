@@ -7,4 +7,11 @@
 			<fileset dir="src/main/java" includes="**/*.class"/>
 		</delete>
 	</target>
+	<target name="run">
+		<java classname="com.mycompany.MyClass" fork="true">
+			<classpath>
+				<pathelement location="src/main/java"/>
+			</classpath>
+		</java>
+	</target>
 </project>
