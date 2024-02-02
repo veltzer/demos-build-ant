@@ -1,14 +1,10 @@
 <project name="my project" basedir="." default="compile">
-	<target name="compile" description="compile all the sources">
-		<mkdir dir="bin"/>
-		<javac
-			srcdir="src"
-			destdir="bin"
-			includeAntRuntime="no"
-		>
-		</javac>
+	<target name="build" description="compile all the sources">
+		<javac srcdir="src" includeantruntime="false"/>
 	</target>
 	<target name="clean" description="clean projects">
-		<delete dir="bin"/>
+		<delete>
+			<fileset dir="src/main/java" includes="**/*.class"/>
+		</delete>
 	</target>
 </project>
