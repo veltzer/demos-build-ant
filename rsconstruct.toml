@@ -29,6 +29,8 @@ src_dirs = ["src/examples"]
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
 [processor.checker.ixmllint]
+# warnings fail too, not only fatal errors
+strict = true
 src_dirs = ["src"]
 
 # ─── java ────────────────────────────────────────────────────────────────────
