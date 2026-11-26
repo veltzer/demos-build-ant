@@ -51,3 +51,8 @@ src_dirs = ["src"]
 
 [processor.checker.icheckstyle]
 src_dirs = ["src"]
+
+# every lint suppression names a rule and says why (see the fleet's CLAUDE.md)
+[processor.checker.suppressions]
+src_dirs = [".github", "config", "src"]
+src_files = [".yamllint.yaml", "README.md"]
