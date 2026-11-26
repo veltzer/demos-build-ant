@@ -42,6 +42,7 @@ src_dirs = ["src/examples"]
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
 [processor.checker.ixmllint]
+src_files = ["checkstyle.xml"]
 # warnings fail too, not only fatal errors
 strict = true
 src_dirs = ["src"]
